@@ -19,8 +19,9 @@ zones[xi.zone.BASTOK_MINES] =
         NOT_HAVE_ENOUGH_GIL            = 6395,  -- You do not have enough gil.
         YOU_MUST_WAIT_ANOTHER_N_DAYS   = 6426,  -- You must wait another <number> [day/days] to perform that action.
         CARRIED_OVER_POINTS            = 6429,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY        = 6430,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY        = 6430,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                   = 6431,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
+        MEMBERS_LEVELS_ARE_RESTRICTED  = 6451,  -- Your party is unable to participate because certain members' levels are restricted.
         HOMEPOINT_SET                  = 6487,  -- Home point set!
         YOU_ACCEPT_THE_MISSION         = 6516,  -- You have accepted the mission.
         ORIGINAL_MISSION_OFFSET        = 6521,  -- You can consult the Mission section of the main menu to review your objectives. Speed and efficiency are your priorities. Dismissed.
@@ -83,8 +84,12 @@ zones[xi.zone.BASTOK_MINES] =
         EMALIVEULAUX_COP_NOT_COMPLETED = 12254, -- I'd like to start my own business someday, but I just haven't found anything that truly interests me.
         EMALIVEULAUX_OPEN_DIALOG       = 12255, -- Rare Tavnazian imports! Get them before they're gone!
         EMALIVEULAUX_CLOSED_DIALOG     = 12256, -- I'd love to sell you goods imported from the island of Tavnazia, but with the area under foreign control, I can't secure my trade routes...
-        COMMON_SENSE_SURVIVAL          = 16021, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
-        TEAR_IN_FABRIC_OF_SPACE        = 16620, -- There appears to be a tear in the fabric of space...
+        CHOCOBO_FEEDING_SLEEP          = 12833, -- Your chocobo is sleeping soundly. You cannot feed it now.
+        CHOCOBO_FEEDING_RUN_AWAY       = 12834, -- Your chocobo has run away. You cannot feed it now.
+        CHOCOBO_FEEDING_STILL_EGG      = 12835, -- You cannot feed a chocobo that has not hatched yet.
+        CHOCOBO_FEEDING_ITEM           = 13918, -- #: %
+        COMMON_SENSE_SURVIVAL          = 16023, -- It appears that you have arrived at a new survival guide provided by the Adventurers' Mutual Aid Network. Common sense dictates that you should now be able to teleport here from similar tomes throughout the world.
+        TEAR_IN_FABRIC_OF_SPACE        = 16622, -- There appears to be a tear in the fabric of space...
     },
     mob =
     {

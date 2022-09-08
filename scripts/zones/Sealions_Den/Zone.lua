@@ -1,9 +1,9 @@
 -----------------------------------
 -- Zone: Sealions_Den (32)
 -----------------------------------
-local ID = require("scripts/zones/Sealions_Den/IDs")
-require("scripts/globals/conquest")
-require("scripts/globals/missions")
+local ID = require('scripts/zones/Sealions_Den/IDs')
+require('scripts/globals/conquest')
+require('scripts/globals/quests')
 -----------------------------------
 local zone_object = {}
 
@@ -21,9 +21,7 @@ zone_object.onZoneIn = function(player, prevZone)
         player:setPos(600.101, 130.355, 797.612, 50)
     end
 
-    if player:getCurrentMission(xi.mission.log_id.COP) == xi.mission.id.cop.CHAINS_AND_BONDS and player:getCharVar("PromathiaStatus") == 2 then
-        cs = 14
-    elseif
+    if
         player:getQuestStatus(xi.quest.log_id.JEUNO, xi.quest.id.jeuno.APOCALYPSE_NIGH) == QUEST_ACCEPTED and
         player:getCharVar('ApocalypseNigh') == 1
     then
@@ -40,9 +38,7 @@ zone_object.onEventUpdate = function(player, csid, option)
 end
 
 zone_object.onEventFinish = function(player, csid, option)
-    if csid == 14 then
-        player:setCharVar("PromathiaStatus", 3);
-    elseif csid == 29 then
+    if csid == 29 then
         player:setCharVar('ApocalypseNigh', 2)
     end
 end

@@ -19,8 +19,9 @@
 ===========================================================================
 */
 
-#include "../../common/socket.h"
-#include "../../common/utils.h"
+#include "common/socket.h"
+#include "common/timer.h"
+#include "common/utils.h"
 
 #include <cstring>
 
@@ -39,14 +40,28 @@ CEntityUpdatePacket::CEntityUpdatePacket(CBaseEntity* PEntity, ENTITYUPDATE type
     this->setSize(0x58);
 
     ref<uint32>(0x04) = PEntity->id;
+    updateWith(PEntity, type, updatemask);
+}
+
+void CEntityUpdatePacket::updateWith(CBaseEntity* PEntity, ENTITYUPDATE type, uint8 updatemask)
+{
+    uint32 currentId = ref<uint32>(0x04);
+    if (currentId != PEntity->id)
+    {
+        // Should only be able to update packets about the same character.
+        ShowError("Unable to update entity update packet for %d with data from %d", currentId, PEntity->id);
+        return;
+    }
+
     ref<uint16>(0x08) = PEntity->targid; // 0x0E entity updates are valid for 0 to 1023 and 1792 to 2303
-    ref<uint8>(0x0A)  = updatemask;
+    ref<uint8>(0x0A) |= updatemask;
 
     switch (type)
     {
         case ENTITY_DESPAWN:
         {
-            ref<uint8>(0x0A) = 0x20;
+            ref<uint8>(0x1F) = 0x02; // despawn animation
+            ref<uint8>(0x0A) = 0x30;
             updatemask       = UPDATE_ALL_MOB;
         }
         break;
@@ -57,10 +72,6 @@ CEntityUpdatePacket::CEntityUpdatePacket(CBaseEntity* PEntity, ENTITYUPDATE type
             {
                 ref<uint8>(0x28) = 0x04;
             }
-            if (PEntity->objtype == TYPE_TRUST)
-            {
-                //ref<uint8>(0x28) = 0x45;
-            }
             if (PEntity->look.size == MODEL_EQUIPPED || PEntity->look.size == MODEL_CHOCOBO)
             {
                 updatemask = 0x57;
@@ -68,6 +79,10 @@ CEntityUpdatePacket::CEntityUpdatePacket(CBaseEntity* PEntity, ENTITYUPDATE type
             if (PEntity->animationsub != 0)
             {
                 ref<uint8>(0x2A) = 4;
+            }
+            if (PEntity->spawnAnimation == SPAWN_ANIMATION::SPECIAL)
+            {
+                ref<uint8>(0x28) |= 0x45;
             }
             ref<uint8>(0x0A) = updatemask;
         }
@@ -184,15 +199,11 @@ CEntityUpdatePacket::CEntityUpdatePacket(CBaseEntity* PEntity, ENTITYUPDATE type
         }
     }
 
-    // TODO: Read from the trust model itself
     if (PEntity->objtype == TYPE_TRUST)
     {
-        // ref<uint32>(0x21) = 0x21b;
-        // ref<uint8>(0x2B) = 0x06;
-        // ref<uint8>(0x2A) = 0x08;
-        // ref<uint8>(0x25) = 0x0f;
-        // ref<uint8>(0x27) = 0x28;
-        ref<uint8>(0x28) = 0x45; // This allows trusts to be despawned
+        // Special spawn animation
+        // This also allows trusts to be despawned
+        ref<uint8>(0x28) |= 0x45;
     }
 
     // Send look data
@@ -233,7 +244,7 @@ CEntityUpdatePacket::CEntityUpdatePacket(CBaseEntity* PEntity, ENTITYUPDATE type
         this->setSize(0x48);
 
         auto name       = PEntity->packetName;
-        auto nameOffset = (PEntity->look.size == MODEL_EQUIPPED) ? 0x44 : 0x34;
+        auto nameOffset = 0x34;
         auto maxLength  = std::min<size_t>(name.size(), PacketNameLength);
 
         // Mobs and NPC's targid's live in the range 0-1023
@@ -245,10 +256,10 @@ CEntityUpdatePacket::CEntityUpdatePacket(CBaseEntity* PEntity, ENTITYUPDATE type
 
         // Make sure to zero-out the existing name area of the packet
         auto start = data + nameOffset;
-        auto size  = static_cast<std::size_t>(this->getSize());
+        auto size  = this->getSize();
         std::memset(start, 0U, size);
 
         // Copy in name
-        std::memcpy(data + nameOffset, name.c_str(), maxLength);
+        std::memcpy(start, name.c_str(), maxLength);
     }
 }

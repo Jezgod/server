@@ -1,16 +1,16 @@
 -----------------------------------
 -- Zone: Northern_San_dOria (231)
 -----------------------------------
-local ID = require("scripts/zones/Northern_San_dOria/IDs")
-require("scripts/globals/events/harvest_festivals")
-require("scripts/quests/flyers_for_regine")
-require("scripts/globals/conquest")
-require("scripts/globals/missions")
-require("scripts/globals/npc_util")
-require("scripts/settings/main")
-require("scripts/globals/quests")
-require("scripts/globals/titles")
-require("scripts/globals/zone")
+local ID = require('scripts/zones/Northern_San_dOria/IDs')
+require('scripts/globals/events/harvest_festivals')
+require('scripts/quests/flyers_for_regine')
+require('scripts/globals/conquest')
+require('scripts/globals/missions')
+require('scripts/globals/npc_util')
+require('scripts/globals/settings')
+require('scripts/globals/quests')
+require('scripts/globals/titles')
+require('scripts/globals/zone')
 -----------------------------------
 local zone_object = {}
 
@@ -28,9 +28,10 @@ zone_object.onZoneIn = function(player, prevZone)
 
     -- FIRST LOGIN (START CS)
     if player:getPlaytime(false) == 0 then
-        if xi.settings.NEW_CHARACTER_CUTSCENE == 1 then
+        if xi.settings.main.NEW_CHARACTER_CUTSCENE == 1 then
             cs = 535
         end
+
         player:setPos(0, 0, -11, 191)
         player:setHomePoint()
     -- RDM AF3 CS
@@ -64,6 +65,7 @@ zone_object.onRegionEnter = function(player, region)
             end
         end,
     }
+
     quests.ffr.onRegionEnter(player, region) -- player approaching Flyers for Regine NPCs
 end
 

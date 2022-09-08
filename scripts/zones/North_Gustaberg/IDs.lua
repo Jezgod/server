@@ -23,8 +23,9 @@ zones[xi.zone.NORTH_GUSTABERG] =
         NOTHING_OUT_OF_ORDINARY       = 6585,  -- There is nothing out of the ordinary here.
         FELLOW_MESSAGE_OFFSET         = 6600,  -- I'm ready. I suppose.
         CARRIED_OVER_POINTS           = 7182,  -- You have carried over <number> login point[/s].
-        LOGIN_CAMPAIGN_UNDERWAY       = 7183,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!<space>
+        LOGIN_CAMPAIGN_UNDERWAY       = 7183,  -- The [/January/February/March/April/May/June/July/August/September/October/November/December] <number> Login Campaign is currently underway!
         LOGIN_NUMBER                  = 7184,  -- In celebration of your most recent login (login no. <number>), we have provided you with <number> points! You currently have a total of <number> points.
+        MEMBERS_LEVELS_ARE_RESTRICTED = 7204,  -- Your party is unable to participate because certain members' levels are restricted.
         FISHING_MESSAGE_OFFSET        = 7238,  -- You can't fish here.
         DIG_THROW_AWAY                = 7251,  -- You dig up <item>, but your inventory is full. You regretfully throw the <item> away.
         FIND_NOTHING                  = 7253,  -- You dig and you dig, but find nothing.
@@ -35,6 +36,7 @@ zones[xi.zone.NORTH_GUSTABERG] =
         CONQUEST                      = 7489,  -- You've earned conquest points!
         ITEMS_ITEMS_LA_LA             = 7852,  -- You can hear a strange voice... Items, items, la la la la la
         GOBLIN_SLIPPED_AWAY           = 7858,  -- The Goblin slipped away when you were not looking...
+        GARRISON_BASE                 = 7868,  -- Hm? What is this? %? How do I know this is not some [San d'Orian/Bastokan/Windurstian] trick?
         PLAYER_OBTAINS_ITEM           = 8083,  -- <name> obtains <item>!
         UNABLE_TO_OBTAIN_ITEM         = 8084,  -- You were unable to obtain the item.
         PLAYER_OBTAINS_TEMP_ITEM      = 8085,  -- <name> obtains the temporary item: <item>!
@@ -73,6 +75,7 @@ zones[xi.zone.NORTH_GUSTABERG] =
             [17211583] = 17211561, -- 285.813 -60.784 518.539
             [17211579] = 17211561, -- 283.958 -60.926 530.016
         },
+
         MAIGHDEAN_UAINE_PH  =
         {
             [17211698] = 17211702, -- 121.242 -0.500 654.504
@@ -82,31 +85,41 @@ zones[xi.zone.NORTH_GUSTABERG] =
             [17211700] = 17211702, -- 203.606 -0.607 721.541
             [17211711] = 17211702, -- 289.709 -0.297 750.252
         },
+
         GAMBILOX_WANDERLING = 17211848,
-        VOIDWALKER  =
+
+        VOIDWALKER =
         {
-            [xi.keyItem.CLEAR_ABYSSITE] = {
+            [xi.keyItem.CLEAR_ABYSSITE] =
+            {
                 17211881, -- Globster
                 17211880, -- Globster
                 17211879, -- Globster
                 17211878, -- Globster
-                17211877,  -- Ground Guzzler
-                17211876,  -- Ground Guzzler
-                17211875,  -- Ground Guzzler
-                17211874,  -- Ground Guzzler
+                17211877, -- Ground Guzzler
+                17211876, -- Ground Guzzler
+                17211875, -- Ground Guzzler
+                17211874, -- Ground Guzzler
             },
-            [xi.keyItem.COLORFUL_ABYSSITE] = {
+
+            [xi.keyItem.COLORFUL_ABYSSITE] =
+            {
                 17211873, -- Lamprey Lord
                 17211872,  -- Shoggoth
             },
-            [xi.keyItem.ORANGE_ABYSSITE] = {
+
+            [xi.keyItem.ORANGE_ABYSSITE] =
+            {
                 17211865  -- Blobdingnag
             },
-            [xi.keyItem.BLACK_ABYSSITE] = {
+
+            [xi.keyItem.BLACK_ABYSSITE] =
+            {
                 17211864  -- Yilbegan
             }
         }
     },
+
     pet =
     {
         [17211865] = -- Blobdingnag
@@ -119,9 +132,9 @@ zones[xi.zone.NORTH_GUSTABERG] =
             17211866,-- Septic Boils
         },
     },
+
     npc =
     {
-        CASKET_BASE   = 17212023,
         OVERSEER_BASE = 17212060, -- Ennigreaud_RK in npc_list
     },
 }

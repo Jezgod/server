@@ -1,14 +1,12 @@
 -----------------------------------
 -- Zone: RuLude_Gardens (243)
 -----------------------------------
-local ID = require("scripts/zones/RuLude_Gardens/IDs")
-require("scripts/globals/conquest")
-require("scripts/globals/keyitems")
-require("scripts/globals/missions")
-require("scripts/globals/npc_util")
-require("scripts/globals/quests")
-require("scripts/globals/rhapsodies")
-require("scripts/globals/items")
+local ID = require('scripts/zones/RuLude_Gardens/IDs')
+require('scripts/globals/conquest')
+require('scripts/globals/keyitems')
+require('scripts/globals/missions')
+require('scripts/globals/npc_util')
+require('scripts/globals/quests')
 -----------------------------------
 local zone_object = {}
 
@@ -36,12 +34,7 @@ zone_object.onRegionEnter = function(player, region)
     local regionID = region:GetRegionID()
 
     if regionID == 1 then
-        if
-            player:getCurrentMission(xi.mission.log_id.COP) == xi.mission.id.cop.FLAMES_IN_THE_DARKNESS and
-            player:getCharVar("PromathiaStatus") == 2
-        then
-            player:startEvent(10051)
-        elseif player:getCurrentMission(xi.mission.log_id.COP) == xi.mission.id.cop.DAWN then
+        if player:getCurrentMission(xi.mission.log_id.COP) == xi.mission.id.cop.DAWN then
             if
                 player:getCharVar("COP_3-taru_story") == 2 and
                 player:getCharVar("COP_shikarees_story") == 1 and
@@ -92,9 +85,7 @@ zone_object.onEventUpdate = function(player, csid, option)
 end
 
 zone_object.onEventFinish = function(player, csid, option)
-    if csid == 10051 then
-        player:setCharVar("PromathiaStatus", 3)
-    elseif csid == 122 then
+    if csid == 122 then
         player:setCharVar("PromathiaStatus", 4)
         player:setCharVar("COP_3-taru_story", 0)
         player:setCharVar("COP_shikarees_story", 0)
