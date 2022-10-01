@@ -1,6 +1,5 @@
 -----------------------------------
 -- Area: Waughroon Shrine
-<<<<<<< Updated upstream
 --  MOB: princess_jelly
 -- Author: Setzor (ported to LSB by dallano)
 -----------------------------------
@@ -172,30 +171,3 @@ entity.onMobDeath = function(mob, player, isKiller)
 end
 
 return entity
-=======
---  Mob: Princess Jelly
--- BCNM: Royal Jelly
------------------------------------
-local entity = {}
-
-entity.onMobEngaged = function(mob, target)
-    mob:setLocalVar("docile", os.time() + 30)
-    mob:SetAutoAttackEnabled(false)
-    mob:SetMobAbilityEnabled(false)
-end
-
-entity.onMobFight = function(mob, target)
- if os.time() > mob:getLocalVar("docile") then
-    mob:SetAutoAttackEnabled(true)
-    mob:SetMobAbilityEnabled(true)
-    end
-end
-
-entity.onMobWeaponSkill = function(target, mob, skill)
-end
-
-entity.onMobDeath = function(mob, player, isKiller)
-end
-
-return entity
->>>>>>> Stashed changes
