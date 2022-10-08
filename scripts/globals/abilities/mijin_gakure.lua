@@ -13,11 +13,6 @@ require("scripts/globals/msg")
 -----------------------------------
 local abilityObject = {}
 
-<<<<<<< Updated upstream
-abilityObject.onAbilityCheck = function(player, target, ability)
-    ability:setRecast(ability:getRecast() - player:getMod(xi.mod.ONE_HOUR_RECAST))
-    return 0, 0
-=======
 ability_object.onAbilityCheck = function(player, target, ability)
     if (target:getObjType() == xi.objType.PC) then
         return xi.msg.basic.CANNOT_ON_THAT_TARG, 0
@@ -25,7 +20,6 @@ ability_object.onAbilityCheck = function(player, target, ability)
         ability:setRecast(ability:getRecast() - player:getMod(xi.mod.ONE_HOUR_RECAST))
         return 0, 0
     end
->>>>>>> Stashed changes
 end
 
 abilityObject.onUseAbility = function(player, target, ability)

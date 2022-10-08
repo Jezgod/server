@@ -8,13 +8,8 @@ require("scripts/globals/mobskills")
 -----------------------------------
 local mobskillObject = {}
 
-<<<<<<< Updated upstream
-mobskillObject.onMobSkillCheck = function(target, mob, skill)
-    if mob:isMobType(xi.mobskills.mobType.NOTORIOUS) or mob:getHPP() > 75 then
-=======
 mobskill_object.onMobSkillCheck = function(target, mob, skill)
     if mob:isMobType(xi.mobskills.mobType.NOTORIOUS) or mob:getHPP() > 99 then
->>>>>>> Stashed changes
         return 1
     end
     return 0

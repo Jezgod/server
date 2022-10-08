@@ -4,9 +4,6 @@
 -----------------------------------
 local abilityObject = {}
 
-<<<<<<< Updated upstream
-abilityObject.onAbilityCheck = function(player, target, ability)
-=======
 ability_object.onAbilityCheck = function(player, target, ability)
     local time = ability:getRecast() - 5
     local mJob = player:getMainJob()
@@ -17,7 +14,6 @@ ability_object.onAbilityCheck = function(player, target, ability)
     else
     end
 
->>>>>>> Stashed changes
     return 0, 0
 end
 
