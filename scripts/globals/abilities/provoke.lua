@@ -4,7 +4,7 @@
 -----------------------------------
 local abilityObject = {}
 
-ability_object.onAbilityCheck = function(player, target, ability)
+abilityObject.onAbilityCheck = function(player, target, ability)
     local time = ability:getRecast() - 5
     local mJob = player:getMainJob()
     local sJob = player:getSubJob()

@@ -20,7 +20,7 @@ require("scripts/globals/msg")
 -----------------------------------
 local abilityObject = {}
 
-ability_object.onAbilityCheck = function(player, target, ability)
+abilityObject.onAbilityCheck = function(player, target, ability)
     local mjob = player:getMainJob()
 
     if player:getPet() ~= nil then
