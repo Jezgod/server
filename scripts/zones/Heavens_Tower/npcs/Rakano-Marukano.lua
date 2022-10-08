@@ -12,6 +12,7 @@ entity.onTrade = function(player, npc, trade)
 end
 
 entity.onTrigger = function(player, npc)
+--[[
     local newNation = xi.nation.WINDURST
     local oldNation = player:getNation()
     local rank = GetNationRank(newNation)
@@ -38,6 +39,7 @@ entity.onTrigger = function(player, npc)
 
         player:startEvent(10002, 0, 1, player:getRank(newNation), newNation, hasGil, cost)
     end
+--]]
 end
 
 entity.onEventUpdate = function(player, csid, option)

@@ -1026,6 +1026,11 @@ void CZone::CharZoneIn(CCharEntity* PChar)
 
     PChar->PLatentEffectContainer->CheckLatentsZone();
 
+    if (PChar->StatusEffectContainer->HasStatusEffect(EFFECT_PROWESS))
+    {
+        PChar->StatusEffectContainer->DelStatusEffect(EFFECT_PROWESS);
+    }
+
     charutils::ReadHistory(PChar);
     charutils::SetCharVar(PChar, "pvp_flag", 0);
     charutils::SetStyleLock(PChar, false);

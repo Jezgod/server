@@ -20,11 +20,19 @@ require("scripts/globals/msg")
 -----------------------------------
 local abilityObject = {}
 
+<<<<<<< Updated upstream
 abilityObject.onAbilityCheck = function(player, target, ability)
+=======
+ability_object.onAbilityCheck = function(player, target, ability)
+    local mjob = player:getMainJob()
+
+>>>>>>> Stashed changes
     if player:getPet() ~= nil then
         return xi.msg.basic.ALREADY_HAS_A_PET, 0
     elseif target:getMaster() ~= nil and target:getMaster():isPC() then
         return xi.msg.basic.THAT_SOMEONES_PET, 0
+    elseif (mjob ~= xi.job.BST) then
+        return tpz.msg.basic.CANNOT_PERFORM, 0
     else
         return 0, 0
     end

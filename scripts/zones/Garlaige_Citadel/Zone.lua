@@ -42,6 +42,18 @@ end
 zoneObject.onZoneIn = function(player, prevZone)
     local cs = -1
 
+    -- set player status
+    nation = player:getNation()
+    allegiance = 0
+
+    allegiance = nation + 2
+    player:setAllegiance(allegiance)
+    player:timer(5000, function(player)
+        player:setCharVar("pvp_flag", 1)
+        player:lockstyleOn()
+        player:PrintToPlayer( string.format("Mandatory PVP Enabled/Restricted."), 29 )
+        end)
+
     if player:getXPos() == 0 and player:getYPos() == 0 and player:getZPos() == 0 then
         player:setPos(-380.035, -13.548, 398.032, 64)
     end

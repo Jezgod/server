@@ -14,6 +14,18 @@ end
 zoneObject.onZoneIn = function(player, prevZone)
     local cs = -1
 
+    -- set player status
+    nation = player:getNation()
+    allegiance = 0
+
+    allegiance = nation + 2
+    player:setAllegiance(allegiance)
+    player:timer(5000, function(player)
+        player:setCharVar("pvp_flag", 1)
+        player:lockstyleOn()
+        player:PrintToPlayer( string.format("Mandatory PVP Enabled/Restricted."), 29 )
+        end)
+
     -- RNG AF2
     if player:getCharVar("fireAndBrimstone") == 2 then
         cs = 4

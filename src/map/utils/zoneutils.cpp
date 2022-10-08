@@ -1088,6 +1088,24 @@ namespace zoneutils
         return ipp;
     }
 
+    uint64 GetZoneColor(uint16 zoneID)
+    {
+        uint8       color = 0;
+        const char* query = "SELECT color FROM zone_settings WHERE zoneid = %u;";
+
+        int ret = sql->Query(query, zoneID);
+
+        if (ret != SQL_ERROR && sql->NumRows() != 0 && sql->NextRow() == SQL_SUCCESS)
+        {
+            color = sql->GetUIntData(0);
+        }
+        else
+        {
+            ShowCritical("zoneutils::GetZoneColor: Cannot find zone %u", zoneID);
+        }
+        return color;
+    }
+
     /************************************************************************
      *                                                                       *
      *  Checks whether or not the zone is a residential area                 *

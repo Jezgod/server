@@ -163,6 +163,7 @@
 #include "../utils/puppetutils.h"
 #include "../utils/trustutils.h"
 #include "../utils/zoneutils.h"
+#include "../utils/fishingutils.h"
 
 //======================================================//
 
@@ -8551,7 +8552,18 @@ void CLuaBaseEntity::recalculateAbilitiesTable()
     PChar->pushPacket(new CCharAbilitiesPacket(PChar));
 }
 
-/************************************************************************
+void CLuaBaseEntity::startFish()
+{
+    XI_DEBUG_BREAK_IF(m_PBaseEntity->objtype != TYPE_PC);
+
+    auto* PChar = static_cast<CCharEntity*>(m_PBaseEntity);
+
+    if (PChar)
+    {
+        fishingutils::StartFishing(PChar);
+    }
+}
+    /************************************************************************
  *  Function: getParty()
  *  Purpose : Returns a Lua table of party member Entity objects
  *  Example : local party = player:getParty()
@@ -14852,6 +14864,8 @@ void CLuaBaseEntity::Register()
 
     SOL_REGISTER("recalculateSkillsTable", CLuaBaseEntity::recalculateSkillsTable);
     SOL_REGISTER("recalculateAbilitiesTable", CLuaBaseEntity::recalculateAbilitiesTable);
+
+    SOL_REGISTER("startFish", CLuaBaseEntity::startFish);
 
     // Parties and Alliances
     SOL_REGISTER("getParty", CLuaBaseEntity::getParty);

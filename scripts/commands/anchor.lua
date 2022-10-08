@@ -105,10 +105,10 @@ function onTrigger(PC, Command, Sub)
         local rem_set = 0
 
 	if denyZone(zone_list_deny_set, zone) == true then
-		PC:PrintToPlayer( string.format("This function is not valid in the current zone."), 14 )
+		PC:PrintToPlayer( string.format("This function is not valid in the current zone."), 29 )
         elseif (PC:getLocalVar("anchor_set_cooldown") > current_time) then
                 rem_set = PC:getLocalVar("anchor_set_cooldown") - current_time
-                PC:PrintToPlayer( string.format("Must wait for SET timer to expire in %i seconds.", rem_set), 14 )
+                PC:PrintToPlayer( string.format("Must wait for SET timer to expire in %i seconds.", rem_set), 29 )
 	else
 		PC:setAnimation(33)
 		PC:PrintToPlayer("Setting anchor point...", 29)
@@ -137,10 +137,10 @@ function onTrigger(PC, Command, Sub)
 
 		
 	if (zone == 0) then
-		PC:PrintToPlayer( string.format("No anchor point set."), 14 )
+		PC:PrintToPlayer( string.format("No anchor point set."), 29 )
         elseif  time > os.time() then
                 remaining = time - os.time()
-                PC:PrintToPlayer( string.format("Must wait for GO timer to expire in %i seconds.", remaining), 14 )
+                PC:PrintToPlayer( string.format("Must wait for GO timer to expire in %i seconds.", remaining), 29 )
         elseif (validZone(zone_list, pzone) == true) then
 		PC:PrintToPlayer( string.format("Sending %s to %s zone...", PC:getName(), zoneNameByNum[zone]), 29)
         	PC:setAnimation(33)
@@ -148,7 +148,7 @@ function onTrigger(PC, Command, Sub)
 			PC:setPos(x, y, z, rot, zone)
 			end)
 	else
-		PC:PrintToPlayer( string.format("Anchor system is not available in the current zone."), 14 )
+		PC:PrintToPlayer( string.format("Anchor teleport is not available in the current zone."), 29 )
 	end
 
     elseif Command == "where" then

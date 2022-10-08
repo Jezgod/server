@@ -1955,6 +1955,16 @@ namespace fishingutils
             PChar->hookedFish->hooked      = false;
             PChar->hookedFish->successtype = FISHINGSUCCESSTYPE_NONE;
 
+            // If not flagged for PVP, can't fish
+            if (PChar->getCharVar("pvp_flag") != 1)
+            {
+                PChar->pushPacket(new CMessageTextPacket(PChar, MessageOffset + FISHMESSAGEOFFSET_CANNOTFISH_MOMENT));
+                PChar->pushPacket(new CMessageSystemPacket(0, 0, 142));
+                PChar->pushPacket(new CReleasePacket(PChar, RELEASE_TYPE::FISHING));
+
+                return;
+            }
+
             // If in the middle of something else, can't fish
             if (PChar->animation != ANIMATION_NONE)
             {

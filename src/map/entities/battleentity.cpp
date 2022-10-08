@@ -45,6 +45,7 @@
 #include "../utils/battleutils.h"
 #include "../utils/petutils.h"
 #include "../utils/puppetutils.h"
+#include "../utils/zoneutils.h"
 #include "../weapon_skill.h"
 
 CBattleEntity::CBattleEntity()
@@ -1307,7 +1308,23 @@ bool CBattleEntity::ValidTarget(CBattleEntity* PInitiator, uint16 targetFlags)
             if ((allegiance >= ALLEGIANCE_TYPE::SAN_DORIA && allegiance <= ALLEGIANCE_TYPE::WINDURST) &&
                 (PInitiator->allegiance >= ALLEGIANCE_TYPE::SAN_DORIA && PInitiator->allegiance <= ALLEGIANCE_TYPE::WINDURST))
             {
-                return allegiance != PInitiator->allegiance;
+                uint8 color = zoneutils::GetZoneColor(PInitiator->getZone());
+                if (color == 3 || color == 5)
+                {
+                    return allegiance != PInitiator->allegiance;
+                }
+
+                else if (color == 2 || color == 4)
+                {
+                    if (PInitiator->GetMLevel() > this->GetMLevel())
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return allegiance != PInitiator->allegiance;
+                    }
+                }
             }
 
             // PVE

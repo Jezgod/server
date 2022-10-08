@@ -486,6 +486,8 @@ public:
     void recalculateSkillsTable();
     void recalculateAbilitiesTable();
 
+    void startFish();
+
     // Parties and Alliances
     auto   getParty() -> sol::table;
     auto   getPartyWithTrusts() -> sol::table;
