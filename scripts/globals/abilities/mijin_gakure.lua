@@ -13,7 +13,7 @@ require("scripts/globals/msg")
 -----------------------------------
 local abilityObject = {}
 
-ability_object.onAbilityCheck = function(player, target, ability)
+abilityObject.onAbilityCheck = function(player, target, ability)
     if (target:getObjType() == xi.objType.PC) then
         return xi.msg.basic.CANNOT_ON_THAT_TARG, 0
     else
