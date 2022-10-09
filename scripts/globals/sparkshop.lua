@@ -241,80 +241,80 @@ local optionToItem =
         [51] = { cost = 153, id = 12306 }, -- Kite shield
     },
     [6] = { -- Equipment (Lv.30 - 39)
-        [ 0] = { cost = 182, id = 16411 }, -- Claws
-        [ 1] = { cost = 194, id = 16399 }, -- Katars
-        [ 2] = { cost = 230, id = 16393 }, -- Mythril Knuckles
-        [ 3] = { cost = 317, id = 19105 }, -- Thug's jambiya
-        [ 4] = { cost = 248, id = 16475 }, -- Mythril kukri
-        [ 5] = { cost = 198, id = 16456 }, -- Mythril baselard
-        [ 6] = { cost = 334, id = 16545 }, -- Broadsword
-        [ 7] = { cost = 497, id = 16576 }, -- Hunting sword
-        [ 8] = { cost = 430, id = 16581 }, -- Holy sword
-        [ 9] = { cost = 493, id = 16549 }, -- Divine sword
-        [10] = { cost = 532, id = 18375 }, -- Falx
-        [11] = { cost = 525, id = 16584 }, -- Mythril claymore
-        [12] = { cost =  80, id = 17955 }, -- Plain pick
-        [13] = { cost = 540, id = 16644 }, -- Mythril axe
-        [14] = { cost = 297, id = 18214 }, -- Voulge
-        [15] = { cost = 515, id = 16706 }, -- Heavy axe
-        [16] = { cost = 154, id = 16845 }, -- Lance
-        [17] = { cost = 144, id = 18078 }, -- Spark lance
-        [18] = { cost = 135, id = 16836 }, -- Halberd
-        [19] = { cost = 130, id = 18122 }, -- Broach lance
-        [20] = { cost = 168, id = 16901 }, -- Kodachi
-        [21] = { cost = 230, id = 16973 }, -- Homura
-        [22] = { cost = 325, id = 16962 }, -- Ashura
-        [23] = { cost = 324, id = 16970 }, -- Hosodachi
-        [24] = { cost = 228, id = 17045 }, -- Maul
-        [25] = { cost =  80, id = 17052 }, -- Chestnut wand
-        [26] = { cost =  80, id = 17061 }, -- Mythril rod
-        [27] = { cost = 226, id = 17036 }, -- Mythril mace
-        [28] = { cost = 319, id = 17080 }, -- Holy maul
-        [29] = { cost =  80, id = 17097 }, -- Elm pole
-        [30] = { cost = 122, id = 17091 }, -- Oak staff
-        [31] = { cost = 312, id = 17162 }, -- Great bow
-        [32] = { cost = 125, id = 17155 }, -- Composite bow
-        [33] = { cost = 171, id = 17218 }, -- Zamburak
-        [34] = { cost = 340, id = 18715 }, -- Mars's hexagun
-        [35] = { cost = 185, id = 18704 }, -- Darksteel hexagun
-        [36] = { cost = 210, id = 17348 }, -- Traversiere
-        [37] = { cost = 250, id = 17355 }, -- Rose harp
-        [38] = { cost =  80, id = 15164 }, -- Garish crown
-        [39] = { cost = 265, id = 14425 }, -- Garish tunic
-        [40] = { cost =  84, id = 14857 }, -- Garish mitts
-        [41] = { cost = 190, id = 14326 }, -- Garish slacks
-        [42] = { cost = 124, id = 15314 }, -- Garish pumps
-        [43] = { cost =  80, id = 15161 }, -- Noct beret
-        [44] = { cost = 198, id = 14422 }, -- Noct doublet
-        [45] = { cost = 136, id = 14854 }, -- Noct gloves
-        [46] = { cost = 135, id = 14323 }, -- Noct brais
-        [47] = { cost = 192, id = 15311 }, -- Noct gaiters
-        [48] = { cost = 174, id = 12610 }, -- Cloak
-        [49] = { cost =  82, id = 12738 }, -- Linen mitts
-        [50] = { cost = 188, id = 12866 }, -- Linen slacks
-        [51] = { cost = 110, id = 12994 }, -- Shoes
-        [52] = { cost =  85, id = 12450 }, -- Padded cap
-        [53] = { cost = 393, id = 12578 }, -- Padded armor
-        [54] = { cost = 216, id = 12706 }, -- Iron mittens
-        [55] = { cost = 316, id = 12836 }, -- Iron subligar
-        [56] = { cost = 196, id = 12962 }, -- Leggings
-        [57] = { cost = 125, id = 12466 }, -- Red cap
-        [58] = { cost = 250, id = 12594 }, -- Gambison
-        [59] = { cost =  80, id = 12722 }, -- Bracers
-        [60] = { cost = 175, id = 12850 }, -- Hose
-        [61] = { cost = 200, id = 12978 }, -- Socks
-        [62] = { cost = 285, id = 12475 }, -- Velvet hat
-        [63] = { cost = 425, id = 12603 }, -- Velvet robe
-        [64] = { cost = 240, id = 12731 }, -- Velvet cuffs
-        [65] = { cost = 347, id = 12859 }, -- Velvet slops
-        [66] = { cost = 134, id = 12987 }, -- Ebony sabots
-        [67] = { cost = 302, id = 13871 }, -- Iron visor
-        [68] = { cost = 464, id = 13783 }, -- Iron scale mail
-        [69] = { cost = 248, id = 14001 }, -- Iron finger gauntlets
-        [70] = { cost = 226, id = 14118 }, -- Iron greaves
-        [71] = { cost =  80, id = 12300 }, -- Targe
-        [72] = { cost = 195, id = 12293 }, -- Oak shield
-        [73] = { cost = 256, id = 12364 }, -- Nymph shield
+        [ 0] = { cost = 182, id = 16411, lv = 30 }, -- Claws
+        [ 1] = { cost = 194, id = 16399, lv = 33 }, -- Katars
+        [ 2] = { cost = 230, id = 16393, lv = 38 }, -- Mythril Knuckles
+        [ 3] = { cost = 317, id = 19105, lv = 30 }, -- Thug's jambiya
+        [ 4] = { cost = 248, id = 16475, lv = 34 }, -- Mythril kukri
+        [ 5] = { cost = 198, id = 16456, lv = 36 }, -- Mythril baselard
+        [ 6] = { cost = 334, id = 16545, lv = 30 }, -- Broadsword
+        [ 7] = { cost = 497, id = 16576, lv = 34 }, -- Hunting sword
+        [ 8] = { cost = 430, id = 16581, lv = 36 }, -- Holy sword
+        [ 9] = { cost = 493, id = 16549, lv = 38 }, -- Divine sword
+        [10] = { cost = 532, id = 18375, lv = 33 }, -- Falx
+        [11] = { cost = 525, id = 16584, lv = 36 }, -- Mythril claymore
+        [12] = { cost =  80, id = 17955, lv = 31 }, -- Plain pick
+        [13] = { cost = 540, id = 16644, lv = 37 }, -- Mythril axe
+        [14] = { cost = 297, id = 18214, lv = 31 }, -- Voulge
+        [15] = { cost = 515, id = 16706, lv = 34 }, -- Heavy axe
+        [16] = { cost = 154, id = 16845, lv = 34 }, -- Lance
+        [17] = { cost = 144, id = 18078, lv = 34 }, -- Spark lance
+        [18] = { cost = 135, id = 16836, lv = 36 }, -- Halberd
+        [19] = { cost = 130, id = 18122, lv = 38 }, -- Broach lance
+        [20] = { cost = 168, id = 16901, lv = 32 }, -- Kodachi
+        [21] = { cost = 230, id = 16973, lv = 34 }, -- Homura
+        [22] = { cost = 325, id = 16962, lv = 36 }, -- Ashura
+        [23] = { cost = 324, id = 16970, lv = 37 }, -- Hosodachi
+        [24] = { cost = 228, id = 17045, lv = 31 }, -- Maul
+        [25] = { cost =  80, id = 17052, lv = 32 }, -- Chestnut wand
+        [26] = { cost =  80, id = 17061, lv = 34 }, -- Mythril rod
+        [27] = { cost = 226, id = 17036, lv = 35 }, -- Mythril mace
+        [28] = { cost = 319, id = 17080, lv = 38 }, -- Holy maul
+        [29] = { cost =  80, id = 17097, lv = 30 }, -- Elm pole
+        [30] = { cost = 122, id = 17091, lv = 39 }, -- Oak staff
+        [31] = { cost = 312, id = 17162, lv = 30 }, -- Great bow
+        [32] = { cost = 125, id = 17155, lv = 36 }, -- Composite bow
+        [33] = { cost = 171, id = 17218, lv = 30 }, -- Zamburak
+        [34] = { cost = 340, id = 18715, lv = 30 }, -- Mars's hexagun
+        [35] = { cost = 185, id = 18704, lv = 36 }, -- Darksteel hexagun
+        [36] = { cost = 210, id = 17348, lv = 32 }, -- Traversiere
+        [37] = { cost = 250, id = 17355, lv = 36 }, -- Rose harp
+        [38] = { cost =  80, id = 15164, lv = 30 }, -- Garish crown
+        [39] = { cost = 265, id = 14425, lv = 30 }, -- Garish tunic
+        [40] = { cost =  84, id = 14857, lv = 30 }, -- Garish mitts
+        [41] = { cost = 190, id = 14326, lv = 30 }, -- Garish slacks
+        [42] = { cost = 124, id = 15314, lv = 30 }, -- Garish pumps
+        [43] = { cost =  80, id = 15161, lv = 30 }, -- Noct beret
+        [44] = { cost = 198, id = 14422, lv = 30 }, -- Noct doublet
+        [45] = { cost = 136, id = 14854, lv = 30 }, -- Noct gloves
+        [46] = { cost = 135, id = 14323, lv = 30 }, -- Noct brais
+        [47] = { cost = 192, id = 15311, lv = 30 }, -- Noct gaiters
+        [48] = { cost = 174, id = 12610, lv = 34 }, -- Cloak
+        [49] = { cost =  82, id = 12738, lv = 34 }, -- Linen mitts
+        [50] = { cost = 188, id = 12866, lv = 34 }, -- Linen slacks
+        [51] = { cost = 110, id = 12994, lv = 34 }, -- Shoes
+        [52] = { cost =  85, id = 12450, lv = 35 }, -- Padded cap
+        [53] = { cost = 393, id = 12578, lv = 35 }, -- Padded armor
+        [54] = { cost = 216, id = 12706, lv = 35 }, -- Iron mittens
+        [55] = { cost = 316, id = 12836, lv = 35 }, -- Iron subligar
+        [56] = { cost = 196, id = 12962, lv = 35 }, -- Leggings
+        [57] = { cost = 125, id = 12466, lv = 36 }, -- Red cap
+        [58] = { cost = 250, id = 12594, lv = 36 }, -- Gambison
+        [59] = { cost =  80, id = 12722, lv = 36 }, -- Bracers
+        [60] = { cost = 175, id = 12850, lv = 36 }, -- Hose
+        [61] = { cost = 200, id = 12978, lv = 36 }, -- Socks
+        [62] = { cost = 285, id = 12475, lv = 38 }, -- Velvet hat
+        [63] = { cost = 425, id = 12603, lv = 38 }, -- Velvet robe
+        [64] = { cost = 240, id = 12731, lv = 38 }, -- Velvet cuffs
+        [65] = { cost = 347, id = 12859, lv = 38 }, -- Velvet slops
+        [66] = { cost = 134, id = 12987, lv = 38 }, -- Ebony sabots
+        [67] = { cost = 302, id = 13871, lv = 37 }, -- Iron visor
+        [68] = { cost = 464, id = 13783, lv = 37 }, -- Iron scale mail
+        [69] = { cost = 248, id = 14001, lv = 37 }, -- Iron finger gauntlets
+        [70] = { cost = 226, id = 14118, lv = 37 }, -- Iron greaves
+        [71] = { cost =  80, id = 12300, lv = 31 }, -- Targe
+        [72] = { cost = 195, id = 12293, lv = 36 }, -- Oak shield
+        [73] = { cost = 256, id = 12364, lv = 39 }, -- Nymph shield
     },
     [7] = { -- Equipment (Lv.40 - 50)
         [ 0] = { cost =  114, id = 16388 }, -- Himantes
@@ -444,50 +444,51 @@ local optionToItem =
         [43] = { cost =  204, id = 12359 }, -- Hickory shield
     },
     [9] = { -- Equipment (Lv.71 - 98)
-        [ 0] = { cost = 1033, id = 16423 }, -- Manoples
-        [ 1] = { cost =  300, id = 18782 }, -- Eyra baghnakhs
-        [ 2] = { cost =  300, id = 16470 }, -- Gully
-        [ 3] = { cost =  687, id = 16485 }, -- Yataghan
-        [ 4] = { cost =  687, id = 19138 }, -- Verus knife
-        [ 5] = { cost =  687, id = 17664 }, -- Firmament
-        [ 6] = { cost =  852, id = 18901 }, -- Falcata
-        [ 7] = { cost = 1625, id = 19151 }, -- Bahadur
-        [ 8] = { cost =  687, id = 19165 }, -- Cratus sword
-        [ 9] = { cost =  866, id = 19170 }, -- Kardia faussar
-        [10] = { cost =  694, id = 16660 }, -- Doom tabar
-        [11] = { cost =  701, id = 18537 }, -- Maiden tabar
-        [12] = { cost =  790, id = 16707 }, -- Bhuj
-        [13] = { cost =  687, id = 18511 }, -- Dolor bhuj
-        [14] = { cost =  687, id = 18517 }, -- Elephas axe
-        [15] = { cost =  675, id = 16777 }, -- Death scythe
-        [16] = { cost =  687, id = 18964 }, -- Dire scythe
-        [17] = { cost =  762, id = 18555 }, -- Sectum sickle
-        [18] = { cost =  795, id = 16840 }, -- Ox tongue
-        [19] = { cost =  300, id = 16861 }, -- Ice lance
-        [20] = { cost =  391, id = 19317 }, -- Borian spear
-        [21] = { cost =  926, id = 18420 }, -- Hayabusa
-        [22] = { cost =  687, id = 19285 }, -- Kakko
-        [23] = { cost =  561, id = 19293 }, -- Ichi-an
-        [24] = { cost =  701, id = 16971 }, -- Yukitsugu
-        [25] = { cost =  391, id = 16963 }, -- Taimakuniyuki
-        [26] = { cost =  300, id = 18848 }, -- Brass jadagna
-        [27] = { cost =  687, id = 18875 }, -- Vodun mace
-        [28] = { cost =  302, id = 18877 }, -- Robur mace
-        [29] = { cost =  300, id = 17102 }, -- Eight-sided pole
-        [30] = { cost =  708, id = 18621 }, -- Warmage's pole
-        [31] = { cost =  516, id = 18695 }, -- Cerberus bow
-        [32] = { cost =  361, id = 19733 }, -- Beursault bow
-        [33] = { cost =  808, id = 17252 }, -- Culverin
-        [34] = { cost =  650, id = 17213 }, -- Staurobow
-        [35] = { cost =  687, id = 19265 }, -- Darkwing
-        [36] = { cost =  687, id = 19267 }, -- Ribauldequin
-        [37] = { cost =  656, id = 19735 }, -- Cecchino's fucile
-        [38] = { cost =  644, id = 12309 }, -- Ritter shield
-        [39] = { cost =  556, id = 12305 }, -- Ice shield
-        [40] = { cost = 2231, id = 12387 }, -- Koenig shield
-        [41] = { cost = 2755, id = 12385 }, -- Acheron shield
-        [42] = { cost =  300,  id = 16189 }, -- Gleaming shield
+        [ 0] = { cost = 1033, id = 16423, lv = 75 }, -- Manoples
+        [ 1] = { cost =  300, id = 18782, lv = 87 }, -- Eyra baghnakhs
+        [ 2] = { cost =  300, id = 16470, lv = 72 }, -- Gully
+        [ 3] = { cost =  687, id = 16485, lv = 77 }, -- Yataghan
+        [ 4] = { cost =  687, id = 19138, lv = 87 }, -- Verus knife
+        [ 5] = { cost =  687, id = 17664, lv = 77 }, -- Firmament
+        [ 6] = { cost =  852, id = 18901, lv = 87 }, -- Falcata
+        [ 7] = { cost = 1625, id = 19151, lv = 73 }, -- Bahadur
+        [ 8] = { cost =  687, id = 19165, lv = 77 }, -- Cratus sword
+        [ 9] = { cost =  866, id = 19170, lv = 87 }, -- Kardia faussar
+        [10] = { cost =  694, id = 16660, lv = 77 }, -- Doom tabar
+        [11] = { cost =  701, id = 18537, lv = 87 }, -- Maiden tabar
+        [12] = { cost =  790, id = 16707, lv = 71 }, -- Bhuj
+        [13] = { cost =  687, id = 18511, lv = 77 }, -- Dolor bhuj
+        [14] = { cost =  687, id = 18517, lv = 87 }, -- Elephas axe
+        [15] = { cost =  675, id = 16777, lv = 73 }, -- Death scythe
+        [16] = { cost =  687, id = 18964, lv = 77 }, -- Dire scythe
+        [17] = { cost =  762, id = 18555, lv = 87 }, -- Sectum sickle
+        [18] = { cost =  795, id = 16840, lv = 71 }, -- Ox tongue
+        [19] = { cost =  300, id = 16861, lv = 74 }, -- Ice lance
+        [20] = { cost =  391, id = 19317, lv = 87 }, -- Borian spear
+        [21] = { cost =  926, id = 18420, lv = 71 }, -- Hayabusa
+        [22] = { cost =  687, id = 19285, lv = 77 }, -- Kakko
+        [23] = { cost =  561, id = 19293, lv = 87 }, -- Ichi-an
+        [24] = { cost =  701, id = 16971, lv = 77 }, -- Yukitsugu
+        [25] = { cost =  391, id = 16963, lv = 87 }, -- Taimakuniyuki
+        [26] = { cost =  300, id = 18848, lv = 71 }, -- Brass jadagna
+        [27] = { cost =  687, id = 18875, lv = 77 }, -- Vodun mace
+        [28] = { cost =  302, id = 18877, lv = 87 }, -- Robur mace
+        [29] = { cost =  300, id = 17102, lv = 75 }, -- Eight-sided pole
+        [30] = { cost =  708, id = 18621, lv = 87 }, -- Warmage's pole
+        [31] = { cost =  516, id = 18695, lv = 75 }, -- Cerberus bow
+        [32] = { cost =  361, id = 19733, lv = 87 }, -- Beursault bow
+        [33] = { cost =  808, id = 17252, lv = 73 }, -- Culverin
+        [34] = { cost =  650, id = 17213, lv = 74 }, -- Staurobow
+        [35] = { cost =  687, id = 19265, lv = 77 }, -- Darkwing
+        [36] = { cost =  687, id = 19267, lv = 77 }, -- Ribauldequin
+        [37] = { cost =  656, id = 19735, lv = 87 }, -- Cecchino's fucile
+        [38] = { cost =  644, id = 12309, lv = 71 }, -- Ritter shield
+        [39] = { cost =  556, id = 12305, lv = 72 }, -- Ice shield
+        [40] = { cost = 2231, id = 12387, lv = 73 }, -- Koenig shield
+        [41] = { cost = 2755, id = 12385, lv = 75 }, -- Acheron shield
+        [42] = { cost =  300, id = 16189, lv = 80 }, -- Gleaming shield
     },
+--[[
     [10] = { -- Equipment (Lv.99)
         [ 0] = { cost =  3000, id = 27740 }, -- Outrider mask
         [ 1] = { cost =  5000, id = 27881 }, -- Outrider mail
@@ -556,6 +557,7 @@ local optionToItem =
         [10152] = { cost =  500, id = xi.items.CIPHER_OF_QULTADAS_ALTER_EGO }, -- Qultada
         [10181] = { cost =  500, id = xi.items.CIPHER_OF_KINGS_ALTER_EGO }, -- King
     },
+--]]
     [20] = { -- Currency Exchange
         [ 0] = { amount = 1000, name = "spark_of_eminence"      },
         [ 1] = { amount = 1000, name = "conquest_points"        },
@@ -611,7 +613,7 @@ end
 function xi.sparkshop.onTrigger(player, npc, event)
     local sparks = player:getCurrency("spark_of_eminence")
     local vouchers = player:getCurrency("aman_vouchers")
-    local remainingLimit = xi.settings.main.WEEKLY_EXCHANGE_LIMIT - player:getCharVar("weekly_sparks_spent")
+    local remainingLimit = (xi.settings.main.WEEKLY_EXCHANGE_LIMIT / 40) - player:getCharVar("weekly_sparks_spent")
     local cipher = xi.extravaganza.campaignActive() * 16 * 65536 -- Trust Alter Ego Extravaganza
     local naakual = 0 -- TODO: Naakual Seven Treasures Item Logic
 
@@ -622,7 +624,7 @@ end
 function xi.sparkshop.onEventUpdate(player,csid,option)
     local sparks = player:getCurrency("spark_of_eminence")
     local weeklySparksSpent = player:getCharVar("weekly_sparks_spent")
-    local remainingLimit = xi.settings.main.WEEKLY_EXCHANGE_LIMIT - weeklySparksSpent
+    local remainingLimit = (xi.settings.main.WEEKLY_EXCHANGE_LIMIT / 40) - weeklySparksSpent
     local category = bit.band(option, 0xFF)
     local selection = bit.rshift(option, 16)
 
@@ -641,6 +643,8 @@ function xi.sparkshop.onEventUpdate(player,csid,option)
     if category <= 10 or category == 12 then
         local item = optionToItem[category][selection]
         local cost = item.cost * qty
+        local pLevel = player:getMainLvl()
+        local iLevel = item.lv
 
         -- makes sure player has room for three stacks of tomes
         if (qty > 12 and qty < 99) and player:getFreeSlotsCount() < 3 then
@@ -662,6 +666,9 @@ function xi.sparkshop.onEventUpdate(player,csid,option)
         -- verifies and finishes transaction
         if cost > remainingLimit and xi.settings.main.ENABLE_EXCHANGE_LIMIT == 1 then
             player:messageSpecial(zones[player:getZoneID()].text.MAX_SPARKS_LIMIT_REACHED, xi.settings.main.WEEKLY_EXCHANGE_LIMIT)
+            player:PrintToPlayer( string.format("Weekly cap is 2500."), 29)
+        elseif iLevel > pLevel then
+            player:messageSpecial(zones[player:getZoneID()].text.ITEM_CANNOT_BE_OBTAINED, item.id)
         elseif sparks >= cost then
             if npcUtil.giveItem(player, { { item.id, qty } }) then
                 sparks = sparks - cost
