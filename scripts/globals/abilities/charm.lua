@@ -28,7 +28,7 @@ abilityObject.onAbilityCheck = function(player, target, ability)
     elseif target:getMaster() ~= nil and target:getMaster():isPC() then
         return xi.msg.basic.THAT_SOMEONES_PET, 0
     elseif (mjob ~= xi.job.BST) then
-        return tpz.msg.basic.CANNOT_PERFORM, 0
+        return xi.msg.basic.CANNOT_PERFORM, 0
     else
         return 0, 0
     end

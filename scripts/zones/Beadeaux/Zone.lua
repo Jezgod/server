@@ -34,6 +34,20 @@ end
 zoneObject.onZoneIn = function(player, prevZone)
     local cs = -1
 
+    -- set player status
+    zone = player:getZoneID()
+    nation = player:getNation()
+    allegiance = 0
+
+    allegiance = nation + 2
+    player:setAllegiance(allegiance)
+    player:timer(5000, function(player)
+        player:setCharVar("pvp_flag", 1)
+        player:lockstyleOn()
+        player:PrintToPlayer( string.format("%s zone status: [[[ %s ]]]", xi.pvpZoneStatus[zone].data.name, xi.pvpZoneStatus[zone].data.color), 29)
+        player:PrintToPlayer( string.format("%s", xi.pvpZoneStatus[zone].data.desc), 29)
+        end)
+
     if player:getXPos() == 0 and player:getYPos() == 0 and player:getZPos() == 0 then
         player:setPos(387.382, 38.029, 19.694, 3)
     end

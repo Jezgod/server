@@ -65,180 +65,180 @@ local optionToItem =
         [32] = { cost = 200, id = 6179 }, -- The Bell Tolls
     },
     [3] = { -- Equipment (Lv.1 - 9)
-        [ 0] = { cost = 50, id = 16385 }, -- Cesti
-        [ 1] = { cost = 50, id = 16390 }, -- Bronze knuckles
-        [ 2] = { cost = 50, id = 16391 }, -- Brass knuckles
-        [ 3] = { cost = 50, id = 16448 }, -- Bronze dagger
-        [ 4] = { cost = 50, id = 16465 }, -- Bronze knife
-        [ 5] = { cost = 50, id = 16454 }, -- Blind dagger
-        [ 6] = { cost = 50, id = 16471 }, -- Blind knife
-        [ 7] = { cost = 50, id = 16449 }, -- Brass dagger
-        [ 8] = { cost = 50, id = 16600 }, -- Wax sword
-        [ 9] = { cost = 50, id = 16530 }, -- Xiphos
-        [10] = { cost = 50, id = 16640 }, -- Bronze axe
-        [11] = { cost = 50, id = 16641 }, -- Brass axe
-        [12] = { cost = 50, id = 16704 }, -- Butterfly axe
-        [13] = { cost = 50, id = 16709 }, -- Inferno axe
-        [14] = { cost = 50, id = 16768 }, -- Bronze zaghnal
-        [15] = { cost = 50, id = 16832 }, -- Harpoon
-        [16] = { cost = 50, id = 16833 }, -- Bronze spear
-        [17] = { cost = 50, id = 16896 }, -- Kunai
-        [18] = { cost = 50, id = 16900 }, -- Wakizashi
-        [19] = { cost = 50, id = 16966 }, -- Tachi
-        [20] = { cost = 50, id = 17024 }, -- Ash club
-        [21] = { cost = 50, id = 17034 }, -- Bronze mace
-        [22] = { cost = 50, id = 17042 }, -- Bronze hammer
-        [23] = { cost = 50, id = 17059 }, -- Bronze rod
-        [24] = { cost = 50, id = 17050 }, -- Willow wand
-        [25] = { cost = 50, id = 17088 }, -- Ash staff
-        [26] = { cost = 50, id = 17095 }, -- Ash pole
-        [27] = { cost = 50, id = 17152 }, -- Shortbow
-        [28] = { cost = 50, id = 17160 }, -- Longbow
-        [29] = { cost = 50, id = 17153 }, -- Self bow
-        [30] = { cost = 50, id = 17216 }, -- Light crossbow
-        [31] = { cost = 50, id = 19224 }, -- Musketoon
-        [32] = { cost = 50, id = 17345 }, -- Flute
-        [33] = { cost = 50, id = 17344 }, -- Cornette
-        [34] = { cost = 50, id = 17347 }, -- Piccolo
-        [35] = { cost = 50, id = 17353 }, -- Maple harp
-        [36] = { cost = 50, id = 12448 }, -- Bronze cap
-        [37] = { cost = 50, id = 12576 }, -- Bronze harness
-        [38] = { cost = 50, id = 12704 }, -- Bronze mittens
-        [39] = { cost = 50, id = 12832 }, -- Bronze subligar
-        [40] = { cost = 50, id = 12960 }, -- Bronze Leggings
-        [41] = { cost = 50, id = 12472 }, -- Circlet
-        [42] = { cost = 50, id = 12600 }, -- Robe
-        [43] = { cost = 50, id = 12728 }, -- Cuffs
-        [44] = { cost = 50, id = 12856 }, -- Slops
-        [45] = { cost = 50, id = 12984 }, -- Ash clogs
-        [46] = { cost = 50, id = 12440 }, -- Leather bandana
-        [47] = { cost = 50, id = 12568 }, -- Leather vest
-        [48] = { cost = 50, id = 12696 }, -- Leather gloves
-        [49] = { cost = 50, id = 12824 }, -- Leather trousers
-        [50] = { cost = 50, id = 12952 }, -- Leather highboots
-        [51] = { cost = 50, id = 12608 }, -- Tunic
-        [52] = { cost = 50, id = 12736 }, -- Mitts
-        [53] = { cost = 50, id = 12864 }, -- Slacks
-        [54] = { cost = 50, id = 12992 }, -- Solea
-        [55] = { cost = 50, id = 12456 }, -- Hachimaki
-        [56] = { cost = 50, id = 12584 }, -- Kenpogi
-        [57] = { cost = 50, id = 12712 }, -- Tekko
-        [58] = { cost = 50, id = 12840 }, -- Sitabaki
-        [59] = { cost = 50, id = 12968 }, -- Kyahan
-        [60] = { cost = 50, id = 12289 }, -- Lauan shield
-        [61] = { cost = 50, id = 12415 }, -- Shell shield
-        [62] = { cost = 50, id = 12290 }, -- Maple shield
-        [63] = { cost = 50, id = 12299 }, -- Aspis
+        [ 0] = { cost = 50, id = 16385, lv = 1 }, -- Cesti
+        [ 1] = { cost = 50, id = 16390, lv = 5 }, -- Bronze knuckles
+        [ 2] = { cost = 50, id = 16391, lv = 9 }, -- Brass knuckles
+        [ 3] = { cost = 50, id = 16448, lv = 1 }, -- Bronze dagger
+        [ 4] = { cost = 50, id = 16465, lv = 1 }, -- Bronze knife
+        [ 5] = { cost = 50, id = 16454, lv = 7 }, -- Blind dagger
+        [ 6] = { cost = 50, id = 16471, lv = 7 }, -- Blind knife
+        [ 7] = { cost = 50, id = 16449, lv = 9 }, -- Brass dagger
+        [ 8] = { cost = 50, id = 16600, lv = 1 }, -- Wax sword
+        [ 9] = { cost = 50, id = 16530, lv = 7 }, -- Xiphos
+        [10] = { cost = 50, id = 16640, lv = 1 }, -- Bronze axe
+        [11] = { cost = 50, id = 16641, lv = 8 }, -- Brass axe
+        [12] = { cost = 50, id = 16704, lv = 5 }, -- Butterfly axe
+        [13] = { cost = 50, id = 16709, lv = 8 }, -- Inferno axe
+        [14] = { cost = 50, id = 16768, lv = 1 }, -- Bronze zaghnal
+        [15] = { cost = 50, id = 16832, lv = 1 }, -- Harpoon
+        [16] = { cost = 50, id = 16833, lv = 7 }, -- Bronze spear
+        [17] = { cost = 50, id = 16896, lv = 1 }, -- Kunai
+        [18] = { cost = 50, id = 16900, lv = 7 }, -- Wakizashi
+        [19] = { cost = 50, id = 16966, lv = 8 }, -- Tachi
+        [20] = { cost = 50, id = 17024, lv = 1 }, -- Ash club
+        [21] = { cost = 50, id = 17034, lv = 4 }, -- Bronze mace
+        [22] = { cost = 50, id = 17042, lv = 5 }, -- Bronze hammer
+        [23] = { cost = 50, id = 17059, lv = 5 }, -- Bronze rod
+        [24] = { cost = 50, id = 17050, lv = 9 }, -- Willow wand
+        [25] = { cost = 50, id = 17088, lv = 1 }, -- Ash staff
+        [26] = { cost = 50, id = 17095, lv = 5 }, -- Ash pole
+        [27] = { cost = 50, id = 17152, lv = 1 }, -- Shortbow
+        [28] = { cost = 50, id = 17160, lv = 5 }, -- Longbow
+        [29] = { cost = 50, id = 17153, lv = 7 }, -- Self bow
+        [30] = { cost = 50, id = 17216, lv = 1 }, -- Light crossbow
+        [31] = { cost = 50, id = 19224, lv = 6 }, -- Musketoon
+        [32] = { cost = 50, id = 17345, lv = 1 }, -- Flute
+        [33] = { cost = 50, id = 17344, lv = 4 }, -- Cornette
+        [34] = { cost = 50, id = 17347, lv = 9 }, -- Piccolo
+        [35] = { cost = 50, id = 17353, lv = 1 }, -- Maple harp
+        [36] = { cost = 50, id = 12448, lv = 1 }, -- Bronze cap
+        [37] = { cost = 50, id = 12576, lv = 1 }, -- Bronze harness
+        [38] = { cost = 50, id = 12704, lv = 1 }, -- Bronze mittens
+        [39] = { cost = 50, id = 12832, lv = 1 }, -- Bronze subligar
+        [40] = { cost = 50, id = 12960, lv = 1 }, -- Bronze Leggings
+        [41] = { cost = 50, id = 12472, lv = 1 }, -- Circlet
+        [42] = { cost = 50, id = 12600, lv = 1 }, -- Robe
+        [43] = { cost = 50, id = 12728, lv = 1 }, -- Cuffs
+        [44] = { cost = 50, id = 12856, lv = 1 }, -- Slops
+        [45] = { cost = 50, id = 12984, lv = 1 }, -- Ash clogs
+        [46] = { cost = 50, id = 12440, lv = 7 }, -- Leather bandana
+        [47] = { cost = 50, id = 12568, lv = 7 }, -- Leather vest
+        [48] = { cost = 50, id = 12696, lv = 7 }, -- Leather gloves
+        [49] = { cost = 50, id = 12824, lv = 7 }, -- Leather trousers
+        [50] = { cost = 50, id = 12952, lv = 7 }, -- Leather highboots
+        [51] = { cost = 50, id = 12608, lv = 8 }, -- Tunic
+        [52] = { cost = 50, id = 12736, lv = 8 }, -- Mitts
+        [53] = { cost = 50, id = 12864, lv = 8 }, -- Slacks
+        [54] = { cost = 50, id = 12992, lv = 8 }, -- Solea
+        [55] = { cost = 50, id = 12456, lv = 8 }, -- Hachimaki
+        [56] = { cost = 50, id = 12584, lv = 8 }, -- Kenpogi
+        [57] = { cost = 50, id = 12712, lv = 8 }, -- Tekko
+        [58] = { cost = 50, id = 12840, lv = 8 }, -- Sitabaki
+        [59] = { cost = 50, id = 12968, lv = 8 }, -- Kyahan
+        [60] = { cost = 50, id = 12289, lv = 1 }, -- Lauan shield
+        [61] = { cost = 50, id = 12415, lv = 7 }, -- Shell shield
+        [62] = { cost = 50, id = 12290, lv = 8 }, -- Maple shield
+        [63] = { cost = 50, id = 12299, lv = 9 }, -- Aspis
     },
     [4] = { -- Equipment (Lv.10 - 19)
-        [ 0] = { cost =  60, id = 16407 }, -- Brass baghnakhs
-        [ 1] = { cost =  60, id = 16450 }, -- Dagger
-        [ 2] = { cost =  60, id = 16466 }, -- Knife
-        [ 3] = { cost =  80, id = 16455 }, -- Baselard
-        [ 4] = { cost =  70, id = 16572 }, -- Bee spatha
-        [ 5] = { cost =  80, id = 16531 }, -- Brass xiphos
-        [ 6] = { cost = 132, id = 16536 }, -- Iron sword
-        [ 7] = { cost =  60, id = 16583 }, -- Claymore
-        [ 8] = { cost =  98, id = 16588 }, -- Flame Claymore
-        [ 9] = { cost =  93, id = 16642 }, -- Bone axe
-        [10] = { cost =  60, id = 16649 }, -- Bone pick
-        [11] = { cost =  91, id = 16705 }, -- Greataxe
-        [12] = { cost =  60, id = 16769 }, -- Brass zaghnal
-        [13] = { cost = 177, id = 16774 }, -- Scythe
-        [14] = { cost =  60, id = 16834 }, -- Brass spear
-        [15] = { cost =  60, id = 18076 }, -- Spark spear
-        [16] = { cost =  93, id = 16919 }, -- Shinobi-gatana
-        [17] = { cost =  89, id = 16906 }, -- Mokuto
-        [18] = { cost =  68, id = 16960 }, -- Uchigatana
-        [19] = { cost = 135, id = 16982 }, -- Nodachi
-        [20] = { cost =  60, id = 17043 }, -- Brass hammer
-        [21] = { cost =  60, id = 17081 }, -- Brass rod
-        [22] = { cost =  60, id = 17025 }, -- Chestnut club
-        [23] = { cost =  60, id = 17051 }, -- Yew wand
-        [24] = { cost =  81, id = 17035 }, -- Mace
-        [25] = { cost =  60, id = 17089 }, -- Holly staff
-        [26] = { cost =  60, id = 17096 }, -- Holly pole
-        [27] = { cost =  99, id = 17161 }, -- Power bow
-        [28] = { cost =  60, id = 17217 }, -- Crossbow
-        [29] = { cost = 200, id = 17257 }, -- Bandit's gun
-        [30] = { cost = 187, id = 17265 }, -- Tanegashima
-        [31] = { cost =  86, id = 17351 }, -- Gemshorn
-        [32] = { cost =  60, id = 17354 }, -- Harp
-        [33] = { cost =  60, id = 12432 }, -- Faceguard
-        [34] = { cost =  60, id = 12560 }, -- Scale mail
-        [35] = { cost =  60, id = 12688 }, -- Scale finger gauntlets
-        [36] = { cost =  60, id = 12816 }, -- Scale cuisses
-        [37] = { cost =  60, id = 12944 }, -- Scale greaves
-        [38] = { cost =  60, id = 12464 }, -- Headgear
-        [39] = { cost =  60, id = 12592 }, -- Doublet
-        [40] = { cost =  60, id = 12720 }, -- Gloves
-        [41] = { cost =  60, id = 12848 }, -- Brais
-        [42] = { cost =  60, id = 12976 }, -- Gaiters
-        [43] = { cost =  65, id = 12454 }, -- Bone mask
-        [44] = { cost =  60, id = 12582 }, -- Bone Harness
-        [45] = { cost =  60, id = 12710 }, -- Bone mittens
-        [46] = { cost =  60, id = 12834 }, -- Bone Subligar
-        [47] = { cost =  60, id = 12966 }, -- Bone Leggings
-        [48] = { cost =  60, id = 12441 }, -- Lizard helm
-        [49] = { cost =  60, id = 12569 }, -- Lizard jerkin
-        [50] = { cost =  60, id = 12697 }, -- Lizard gloves
-        [51] = { cost =  60, id = 12825 }, -- Lizard trousers
-        [52] = { cost =  60, id = 12953 }, -- Lizard Ledelsens
-        [53] = { cost =  60, id = 12291 }, -- Elm shield
+        [ 0] = { cost =  60, id = 16407, lv = 11 }, -- Brass baghnakhs
+        [ 1] = { cost =  60, id = 16450, lv = 12 }, -- Dagger
+        [ 2] = { cost =  60, id = 16466, lv = 13 }, -- Knife
+        [ 3] = { cost =  80, id = 16455, lv = 18 }, -- Baselard
+        [ 4] = { cost =  70, id = 16572, lv = 11 }, -- Bee spatha
+        [ 5] = { cost =  80, id = 16531, lv = 13 }, -- Brass xiphos
+        [ 6] = { cost = 132, id = 16536, lv = 18 }, -- Iron sword
+        [ 7] = { cost =  60, id = 16583, lv = 10 }, -- Claymore
+        [ 8] = { cost =  98, id = 16588, lv = 13 }, -- Flame Claymore
+        [ 9] = { cost =  93, id = 16642, lv = 13 }, -- Bone axe
+        [10] = { cost =  60, id = 16649, lv = 16 }, -- Bone pick
+        [11] = { cost =  91, id = 16705, lv = 12 }, -- Greataxe
+        [12] = { cost =  60, id = 16769, lv = 10 }, -- Brass zaghnal
+        [13] = { cost = 177, id = 16774, lv = 18 }, -- Scythe
+        [14] = { cost =  60, id = 16834, lv = 14 }, -- Brass spear
+        [15] = { cost =  60, id = 18076, lv = 14 }, -- Spark spear
+        [16] = { cost =  93, id = 16919, lv = 13 }, -- Shinobi-gatana
+        [17] = { cost =  89, id = 16906, lv = 16 }, -- Mokuto
+        [18] = { cost =  68, id = 16960, lv = 12 }, -- Uchigatana
+        [19] = { cost = 135, id = 16982, lv = 16 }, -- Nodachi
+        [20] = { cost =  60, id = 17043, lv = 12 }, -- Brass hammer
+        [21] = { cost =  60, id = 17081, lv = 12 }, -- Brass rod
+        [22] = { cost =  60, id = 17025, lv = 16 }, -- Chestnut club
+        [23] = { cost =  60, id = 17051, lv = 18 }, -- Yew wand
+        [24] = { cost =  81, id = 17035, lv = 19 }, -- Mace
+        [25] = { cost =  60, id = 17089, lv = 11 }, -- Holly staff
+        [26] = { cost =  60, id = 17096, lv = 16 }, -- Holly pole
+        [27] = { cost =  99, id = 17161, lv = 16 }, -- Power bow
+        [28] = { cost =  60, id = 17217, lv = 12 }, -- Crossbow
+        [29] = { cost = 200, id = 17257, lv = 15 }, -- Bandit's gun
+        [30] = { cost = 187, id = 17265, lv = 19 }, -- Tanegashima
+        [31] = { cost =  86, id = 17351, lv = 19 }, -- Gemshorn
+        [32] = { cost =  60, id = 17354, lv = 14 }, -- Harp
+        [33] = { cost =  60, id = 12432, lv = 10 }, -- Faceguard
+        [34] = { cost =  60, id = 12560, lv = 10 }, -- Scale mail
+        [35] = { cost =  60, id = 12688, lv = 10 }, -- Scale finger gauntlets
+        [36] = { cost =  60, id = 12816, lv = 10 }, -- Scale cuisses
+        [37] = { cost =  60, id = 12944, lv = 10 }, -- Scale greaves
+        [38] = { cost =  60, id = 12464, lv = 11 }, -- Headgear
+        [39] = { cost =  60, id = 12592, lv = 11 }, -- Doublet
+        [40] = { cost =  60, id = 12720, lv = 11 }, -- Gloves
+        [41] = { cost =  60, id = 12848, lv = 11 }, -- Brais
+        [42] = { cost =  60, id = 12976, lv = 11 }, -- Gaiters
+        [43] = { cost =  65, id = 12454, lv = 16 }, -- Bone mask
+        [44] = { cost =  60, id = 12582, lv = 16 }, -- Bone Harness
+        [45] = { cost =  60, id = 12710, lv = 16 }, -- Bone mittens
+        [46] = { cost =  60, id = 12834, lv = 16 }, -- Bone Subligar
+        [47] = { cost =  60, id = 12966, lv = 16 }, -- Bone Leggings
+        [48] = { cost =  60, id = 12441, lv = 17 }, -- Lizard helm
+        [49] = { cost =  60, id = 12569, lv = 17 }, -- Lizard jerkin
+        [50] = { cost =  60, id = 12697, lv = 17 }, -- Lizard gloves
+        [51] = { cost =  60, id = 12825, lv = 17 }, -- Lizard trousers
+        [52] = { cost =  60, id = 12953, lv = 17 }, -- Lizard Ledelsens
+        [53] = { cost =  60, id = 12291, lv = 13 }, -- Elm shield
     },
     [5] = { -- Equipment (Lv.20 - 29)
-        [ 0] = { cost =  87, id = 16392 }, -- Metal knuckles
-        [ 1] = { cost = 144, id = 16406 }, -- Baghnakhs
-        [ 2] = { cost =  99, id = 16387 }, -- Poison cesti
-        [ 3] = { cost = 103, id = 16473 }, -- Kukri
-        [ 4] = { cost =  96, id = 16496 }, -- Poison dagger
-        [ 5] = { cost = 123, id = 16472 }, -- Poison knife
-        [ 6] = { cost = 143, id = 16451 }, -- Mythril dagger
-        [ 7] = { cost = 170, id = 16517 }, -- Degen
-        [ 8] = { cost = 215, id = 16513 }, -- Tuck
-        [ 9] = { cost = 269, id = 16532 }, -- Gladius
-        [10] = { cost =  70, id = 16593 }, -- Plain sword
-        [11] = { cost = 349, id = 16594 }, -- Inferno sword
-        [12] = { cost = 136, id = 16643 }, -- Battleaxe
-        [13] = { cost =  83, id = 17942 }, -- Tomahawk
-        [14] = { cost = 209, id = 16770 }, -- Zaghnal
-        [15] = { cost =  84, id = 16835 }, -- Spear
-        [16] = { cost = 103, id = 17776 }, -- Hibari
-        [17] = { cost = 120, id = 16907 }, -- Busuto
-        [18] = { cost = 109, id = 17044 }, -- Warhammer
-        [19] = { cost =  70, id = 17090 }, -- Elm staff
-        [20] = { cost =  70, id = 17424 }, -- Spiked club
-        [21] = { cost = 132, id = 17154 }, -- Wrapped bow
-        [22] = { cost = 520, id = 17248 }, -- Arquebus
-        [23] = { cost = 432, id = 17259 }, -- Pirate's gun
-        [24] = { cost =  70, id = 15207 }, -- Trader's chapeau
-        [25] = { cost =  71, id = 14446 }, -- Trader's saio
-        [26] = { cost =  70, id = 14053 }, -- Trader's cuffs
-        [27] = { cost =  70, id = 15404 }, -- Trader's slops
-        [28] = { cost =  70, id = 15343 }, -- Trader's pigaches
-        [29] = { cost = 171, id = 12424 }, -- Iron mask
-        [30] = { cost = 264, id = 12552 }, -- Chainmail
-        [31] = { cost = 141, id = 12680 }, -- Chain mittens
-        [32] = { cost = 210, id = 12808 }, -- Chain hose
-        [33] = { cost = 129, id = 12936 }, -- Greaves
-        [34] = { cost = 195, id = 15165 }, -- Shade tiara
-        [35] = { cost = 525, id = 14426 }, -- Shade harness
-        [36] = { cost = 301, id = 14858 }, -- Shade mittens
-        [37] = { cost = 354, id = 14327 }, -- Shade tights
-        [38] = { cost = 379, id = 15315 }, -- Shade leggings
-        [39] = { cost = 250, id = 15167 }, -- Eisenschaller
-        [40] = { cost = 250, id = 14431 }, -- Eisenbrust
-        [41] = { cost = 170, id = 14860 }, -- Eisenhentzes
-        [42] = { cost = 140, id = 14329 }, -- Eisendiechlings
-        [43] = { cost = 290, id = 15317 }, -- Eisenschuhs
-        [44] = { cost =  70, id = 15163 }, -- Seer's crown
-        [45] = { cost = 234, id = 14424 }, -- Seer's tunic
-        [46] = { cost =  97, id = 14856 }, -- Seer's mitts
-        [47] = { cost = 137, id = 14325 }, -- Seer's slacks
-        [48] = { cost = 157, id = 15313 }, -- Seer's pumps
-        [49] = { cost =  83, id = 12292 }, -- Mahogany shield
-        [50] = { cost =  70, id = 12414 }, -- Turtle shield
-        [51] = { cost = 153, id = 12306 }, -- Kite shield
+        [ 0] = { cost =  87, id = 16392, lv = 20 }, -- Metal knuckles
+        [ 1] = { cost = 144, id = 16406, lv = 24 }, -- Baghnakhs
+        [ 2] = { cost =  99, id = 16387, lv = 27 }, -- Poison cesti
+        [ 3] = { cost = 103, id = 16473, lv = 20 }, -- Kukri
+        [ 4] = { cost =  96, id = 16496, lv = 20 }, -- Poison dagger
+        [ 5] = { cost = 123, id = 16472, lv = 21 }, -- Poison knife
+        [ 6] = { cost = 143, id = 16451, lv = 23 }, -- Mythril dagger
+        [ 7] = { cost = 170, id = 16517, lv = 20 }, -- Degen
+        [ 8] = { cost = 215, id = 16513, lv = 23 }, -- Tuck
+        [ 9] = { cost = 269, id = 16532, lv = 27 }, -- Gladius
+        [10] = { cost =  70, id = 16593, lv = 20 }, -- Plain sword
+        [11] = { cost = 349, id = 16594, lv = 27 }, -- Inferno sword
+        [12] = { cost = 136, id = 16643, lv = 20 }, -- Battleaxe
+        [13] = { cost =  83, id = 17942, lv = 25 }, -- Tomahawk
+        [14] = { cost = 209, id = 16770, lv = 20 }, -- Zaghnal
+        [15] = { cost =  84, id = 16835, lv = 24 }, -- Spear
+        [16] = { cost = 103, id = 17776, lv = 24 }, -- Hibari
+        [17] = { cost = 120, id = 16907, lv = 26 }, -- Busuto
+        [18] = { cost = 109, id = 17044, lv = 20 }, -- Warhammer
+        [19] = { cost =  70, id = 17090, lv = 23 }, -- Elm staff
+        [20] = { cost =  70, id = 17424, lv = 25 }, -- Spiked club
+        [21] = { cost = 132, id = 17154, lv = 24 }, -- Wrapped bow
+        [22] = { cost = 520, id = 17248, lv = 22 }, -- Arquebus
+        [23] = { cost = 432, id = 17259, lv = 27 }, -- Pirate's gun
+        [24] = { cost =  70, id = 15207, lv = 20 }, -- Trader's chapeau
+        [25] = { cost =  71, id = 14446, lv = 20 }, -- Trader's saio
+        [26] = { cost =  70, id = 14053, lv = 20 }, -- Trader's cuffs
+        [27] = { cost =  70, id = 15404, lv = 20 }, -- Trader's slops
+        [28] = { cost =  70, id = 15343, lv = 20 }, -- Trader's pigaches
+        [29] = { cost = 171, id = 12424, lv = 24 }, -- Iron mask
+        [30] = { cost = 264, id = 12552, lv = 24 }, -- Chainmail
+        [31] = { cost = 141, id = 12680, lv = 24 }, -- Chain mittens
+        [32] = { cost = 210, id = 12808, lv = 24 }, -- Chain hose
+        [33] = { cost = 129, id = 12936, lv = 24 }, -- Greaves
+        [34] = { cost = 195, id = 15165, lv = 25 }, -- Shade tiara
+        [35] = { cost = 525, id = 14426, lv = 25 }, -- Shade harness
+        [36] = { cost = 301, id = 14858, lv = 25 }, -- Shade mittens
+        [37] = { cost = 354, id = 14327, lv = 25 }, -- Shade tights
+        [38] = { cost = 379, id = 15315, lv = 25 }, -- Shade leggings
+        [39] = { cost = 250, id = 15167, lv = 29 }, -- Eisenschaller
+        [40] = { cost = 250, id = 14431, lv = 29 }, -- Eisenbrust
+        [41] = { cost = 170, id = 14860, lv = 29 }, -- Eisenhentzes
+        [42] = { cost = 140, id = 14329, lv = 29 }, -- Eisendiechlings
+        [43] = { cost = 290, id = 15317, lv = 29 }, -- Eisenschuhs
+        [44] = { cost =  70, id = 15163, lv = 29 }, -- Seer's crown
+        [45] = { cost = 234, id = 14424, lv = 29 }, -- Seer's tunic
+        [46] = { cost =  97, id = 14856, lv = 29 }, -- Seer's mitts
+        [47] = { cost = 137, id = 14325, lv = 29 }, -- Seer's slacks
+        [48] = { cost = 157, id = 15313, lv = 29 }, -- Seer's pumps
+        [49] = { cost =  83, id = 12292, lv = 20 }, -- Mahogany shield
+        [50] = { cost =  70, id = 12414, lv = 24 }, -- Turtle shield
+        [51] = { cost = 153, id = 12306, lv = 28 }, -- Kite shield
     },
     [6] = { -- Equipment (Lv.30 - 39)
         [ 0] = { cost = 182, id = 16411, lv = 30 }, -- Claws

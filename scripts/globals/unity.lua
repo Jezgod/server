@@ -135,8 +135,10 @@ function xi.unity.onTrigger(player, npc)
     -- First time selecting Unity
     elseif not allForOneCompleted then
         player:startEvent(zoneEventIds[zoneId][3])
+--[[
     else
         player:startEvent(zoneEventIds[zoneId][4], 0, player:getUnityLeader(), accolades, remainingLimit, 0, 0, 0, 0)
+--]]
     end
 end
 

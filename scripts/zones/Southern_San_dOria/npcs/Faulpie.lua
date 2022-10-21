@@ -15,6 +15,11 @@ local entity = {}
 entity.onTrade = function(player, npc, trade)
     local signed  = trade:getItem():getSignature() == player:getName() and 1 or 0
     local newRank = xi.crafting.tradeTestItem(player, npc, trade, xi.skill.LEATHERCRAFT)
+    local questCheck = player:getEminenceCompleted(104)
+    local count      = trade:getItemCount()
+    local items      = trade:hasItemQty(1126, 30)
+    local skillID    = xi.skill.LEATHERCRAFT
+    local skillLV    = 30
 
     if
         newRank > 9 and
@@ -33,6 +38,36 @@ entity.onTrade = function(player, npc, trade)
         player:setSkillRank(xi.skill.LEATHERCRAFT, newRank)
         player:startEvent(649, 0, 0, 0, 0, newRank)
         player:setLocalVar("LeathercraftTraded",1)
+    end
+
+    if (questCheck == true) then
+        if (player:getCharVar("craft1") == 0) then
+            if (items == true and count == 30) then
+
+                player:tradeComplete()
+                player:setSkillLevel(skillID, skillLV * 10)
+                player:messageBasic(xi.msg.basic.SKILL_REACHES_LEVEL, skillID, skillLV)
+                player:setCharVar("craft1", 1)
+            
+            else
+                player:PrintToPlayer( string.format("Please trade appropriate items."), 29 )
+            end
+        elseif (player:getCharVar("craft2") == 0) then
+            if (items == true and count == 30) then
+
+                player:tradeComplete()
+                player:setSkillLevel(skillID, skillLV * 10)
+                player:messageBasic(xi.msg.basic.SKILL_REACHES_LEVEL, skillID, skillLV)
+                player:setCharVar("craft2", 1)
+
+            else
+                player:PrintToPlayer( string.format("Please trade appropriate items."), 29 )
+            end
+        else
+            player:PrintToPlayer( string.format("Only two crafts can be raised using this method."), 29 )
+        end
+    else
+        player:PrintToPlayer( string.format("Required Synthesis RoE quest not complete."), 29 )
     end
 end
 

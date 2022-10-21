@@ -88,6 +88,8 @@ function onTrigger(player)
 	--if validZone(zone_list, zone) == true then
         --        player:PrintToPlayer( string.format("%s zone status: [[[ %s ]]]", xi.pvpZoneStatus[zone].data.name, xi.pvpZoneStatus[zone].data.color), 29)
         --        player:PrintToPlayer( string.format("%s", xi.pvpZoneStatus[zone].data.desc), 29)
+        --if player:isInMogHouse() then
+        --        player:PrintToPlayer( string.format("Cannot enable PVP in Mog House."), 29 )
         if xi.pvpZoneStatus[zone].data.color == "WHITE" then
                 player:PrintToPlayer( string.format("%s zone status: [[[ %s ]]]", xi.pvpZoneStatus[zone].data.name, xi.pvpZoneStatus[zone].data.color), 29)
                 player:PrintToPlayer( string.format("%s", xi.pvpZoneStatus[zone].data.desc), 29)

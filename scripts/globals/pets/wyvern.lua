@@ -16,28 +16,29 @@ local wyvernCapabilities =
 
 local wyvernTypes =
 {
-    [xi.job.WAR] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.MNK] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.WHM] = wyvernCapabilities.DEFENSIVE,
-    [xi.job.BLM] = wyvernCapabilities.DEFENSIVE,
-    [xi.job.RDM] = wyvernCapabilities.DEFENSIVE,
-    [xi.job.THF] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.PLD] = wyvernCapabilities.MULTI,
-    [xi.job.DRK] = wyvernCapabilities.MULTI,
-    [xi.job.BST] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.BRD] = wyvernCapabilities.MULTI,
-    [xi.job.RNG] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.SAM] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.NIN] = wyvernCapabilities.MULTI,
-    [xi.job.DRG] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.SMN] = wyvernCapabilities.DEFENSIVE,
-    [xi.job.BLU] = wyvernCapabilities.DEFENSIVE,
-    [xi.job.COR] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.PUP] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.DNC] = wyvernCapabilities.OFFENSIVE,
-    [xi.job.SCH] = wyvernCapabilities.DEFENSIVE,
-    [xi.job.GEO] = wyvernCapabilities.DEFENSIVE,
-    [xi.job.RUN] = wyvernCapabilities.MULTI,
+    [xi.job.NONE] = wyvernCapabilities.OFFENSIVE,
+    [xi.job.WAR]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.MNK]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.WHM]  = wyvernCapabilities.DEFENSIVE,
+    [xi.job.BLM]  = wyvernCapabilities.DEFENSIVE,
+    [xi.job.RDM]  = wyvernCapabilities.DEFENSIVE,
+    [xi.job.THF]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.PLD]  = wyvernCapabilities.MULTI,
+    [xi.job.DRK]  = wyvernCapabilities.MULTI,
+    [xi.job.BST]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.BRD]  = wyvernCapabilities.MULTI,
+    [xi.job.RNG]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.SAM]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.NIN]  = wyvernCapabilities.MULTI,
+    [xi.job.DRG]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.SMN]  = wyvernCapabilities.DEFENSIVE,
+    [xi.job.BLU]  = wyvernCapabilities.DEFENSIVE,
+    [xi.job.COR]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.PUP]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.DNC]  = wyvernCapabilities.OFFENSIVE,
+    [xi.job.SCH]  = wyvernCapabilities.DEFENSIVE,
+    [xi.job.GEO]  = wyvernCapabilities.DEFENSIVE,
+    [xi.job.RUN]  = wyvernCapabilities.MULTI,
 }
 
 local function doHealingBreath(player, threshold, breath)
@@ -93,7 +94,7 @@ entity.onMobSpawn = function(mob)
     end
     local wyvernType = wyvernTypes[master:getSubJob()]
     local healingbreath = xi.jobAbility.HEALING_BREATH
-    if mob:getMainLvl() >= 80 then healingbreath = xi.jobAbility.HEALING_BREATH_IV
+    if mob:getMainLvl() >= 75 then healingbreath = xi.jobAbility.HEALING_BREATH_IV
     elseif mob:getMainLvl() >= 40 then healingbreath = xi.jobAbility.HEALING_BREATH_III
     elseif mob:getMainLvl() >= 20 then healingbreath = xi.jobAbility.HEALING_BREATH_II
     end
